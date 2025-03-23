@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Timestamps Jumper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    .timestamp {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .timestamp button {
+      margin-left: 5px;
+    }
+    .video-timestamps {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Manage Timestamps</h1>
+  <div id="timestamps"></div>
+  <button id="view-all-timestamps">View All Timestamps</button>
+  <div id="all-timestamps"></div>
+  <hr>
+  <h2>Add/Edit Timestamp</h2>
+  <label for="start-time">Start Time (mm:ss):</label>
+  <input type="text" id="start-time">
+  <br>
+  <label for="end-time">End Time (mm:ss, optional):</label>
+  <input type="text" id="end-time">
+  <br>
+  <label for="name">Name (optional):</label>
+  <input type="text" id="name">
+  <br>
+  <button id="add-timestamp">Add Timestamp</button>
+  <script src="popup.js"></script>
+</body>
+</html>
